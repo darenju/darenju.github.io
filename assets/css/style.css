@@ -6,6 +6,7 @@ html, body {
   display: table;
   width: 100%;
   height: 100%;
+  background-color: #FBDDB8;
   background-image: url(../img/background.jpg);
   background-position: center center;
   background-repeat: no-repeat;
