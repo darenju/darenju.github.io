@@ -14,6 +14,15 @@ html, body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #000;
+  width: 100%;
+  opacity: 0;
+}
 .welcome {
   display: table-cell;
   vertical-align: middle;
@@ -50,7 +59,7 @@ html, body {
   background-color: #fff;
   -webkit-box-shadow: 0 0 5px rgba(0,0,0,.2);
   box-shadow: 0 0 5px rgba(0,0,0,.2);
-  font-family: 'Raleway', sans-serif;
+  font-family: Raleway, sans-serif;
   padding: 1.5em;
   margin: 2em;
 }
@@ -103,6 +112,10 @@ html, body {
 }
 
 @media (max-width: 640px) {
+  .card {
+    margin: .5em;
+    padding: .5em;
+  }
   .resume {
     display: block;
   }
