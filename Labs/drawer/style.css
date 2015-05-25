@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+html, body {
+  margin: 0;
+  height: 100%;
+  font-family: sans-serif;
+}
+.da--underlay {
+  background-image: url(http://www.pixeden.com/media/k2/galleries/275/001-blurred-background-texture-vol2.jpg);
+  background-size: cover;
+  background-color: rgba(0,0,0,.6);
+}
+.da--animated {
+  transition: transform .3s ease-in-out, opacity .3s ease-in-out;
+}
+.viewport {
+  display: table;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.viewport__page {
+  display: table-cell;
+  width: 100%;
+}
+.content {
+  background-color: #fff;
+  position: relative;
+  min-height: 100%;
+  z-index: 1;
+}
+.search {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3em;
+  z-index: 0;
+  text-align: center;
+}
+.search__input {
+  background-color: rgba(255,255,255,.4);
+  border-radius: 5px;
+  height: 3em;
+  margin: .5em;
+  padding: .5em;
+  border: 0;
+  width: 50%;
+  opacity: .5;
+  transform: translateY(-50%);
+}
+.menu {
+  position: fixed;
+  top: 3em;
+  bottom: 0;
+  left: 0;
+  width: 15em;
+  z-index: 0;
+}
+.menu__content {
+  transform: translateX(-50%);
+  opacity: .5;
+}
+.drawer--open .content {
+  transform: translateX(15em) translateY(3em);
+}
+.drawer--open .search__input {
+  transform: translateY(0);
+  opacity: 1;
+}
+.drawer--open .menu__content {
+  transform: translateX(0);
+  opacity: 1;
+}
+
