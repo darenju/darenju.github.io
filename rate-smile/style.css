@@ -19,7 +19,7 @@ html, body {
     flex-direction: column;
     -webkit-user-select: none;
     user-select: none;
-    max-width: 500px;
+    flex-basis: 500px;
 }
 .rate__mark {
     display: flex;
