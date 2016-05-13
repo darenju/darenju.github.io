@@ -7,6 +7,7 @@
     var height = 0;
     var note = 2.5;
     var isDown = false;
+    var lastY = null;
 
     var rainbow = new Rainbow();
     rainbow.setSpectrum('#e74c3c', '#3498db', '#2ecc71');
@@ -17,16 +18,32 @@
         markValue.innerHTML = Math.abs(note).toFixed(1);
     }
 
-    function startRating() {
+    function startRating(e) {
+        e.preventDefault();
+        lastY = e.touches[0].pageY;
         isDown = true;
     }
 
-    function endRating() {
+    function endRating(e) {
+        e.preventDefault();
+        lastY = null;
         isDown = false;
     }
 
     function rate(e) {
+        e.preventDefault();
+
         if (isDown) {
+            var newY = e.touches[0].pageY;
+            if (newY > lastY) {
+                e.movementY = 1;
+            }
+            else {
+                e.movementY = -1;
+            }
+
+            lastY = newY;
+
             // Going down, smile, increase note
             if (e.movementY > 0 && height < max) {
                 height += increment;
