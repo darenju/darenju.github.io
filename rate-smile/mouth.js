@@ -59,7 +59,7 @@
                 note -= 0.1;
             }
 
-            var color = rainbow.colourAt(note);
+            var color = '#' + rainbow.colourAt(note);
 
             Array.prototype.forEach.call(document.querySelectorAll('.stroke'), function(e) {
                 e.style.stroke = color;
