@@ -1,0 +1,49 @@
+.stroke {
+    stroke-width: 10;
+    fill: none;
+    stroke: #3498db;
+    stroke-linecap: round;
+}
+html, body {
+    display: flex;
+    height: 100%;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+.rate {
+    cursor: default;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    -webkit-user-select: none;
+    user-select: none;
+    max-width: 500px;
+}
+.rate__mark {
+    display: flex;
+    justify-content: center;
+    font-family: Comfortaa, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.rate__mark__value {
+    color: #000;
+    margin-right: 10px;
+}
+.rate__mark__max {
+    color: #aaa;
+}
+.rate__mark__max::before {
+    content: '/ ';
+}
+.rate__img {
+    flex-direction: row;
+    flex: 1;
+}
+.rate__svg {
+    height: auto;
+    max-width: 100%;
+}
