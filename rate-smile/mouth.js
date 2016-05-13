@@ -20,7 +20,9 @@
 
     function startRating(e) {
         e.preventDefault();
-        lastY = e.touches[0].pageY;
+        if (e.touches) {
+            lastY = e.touches[0].pageY;
+        }
         isDown = true;
     }
 
@@ -34,15 +36,17 @@
         e.preventDefault();
 
         if (isDown) {
-            var newY = e.touches[0].pageY;
-            if (newY > lastY) {
-                e.movementY = 1;
-            }
-            else {
-                e.movementY = -1;
-            }
+            if (e.touches) {
+                var newY = e.touches[0].pageY;
+                if (newY > lastY) {
+                    e.movementY = 1;
+                }
+                else {
+                    e.movementY = -1;
+                }
 
-            lastY = newY;
+                lastY = newY;
+            }
 
             // Going down, smile, increase note
             if (e.movementY > 0 && height < max) {
