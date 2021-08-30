@@ -1,4 +1,10 @@
+title: BZHista ☕️ 
+email: your-email@example.com
+description: >-
+  Blog personnel où je parle de café.
+url: "http://bzhista.frad.in"
+
 theme: jekyll-theme-slate
 
-title: BZHista ☕️
-description: Blog personnel où je parle de café.
+github:
+  is_project_page: false
