@@ -273,10 +273,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages (~> 219)
   jekyll-feed (~> 0.12)
-  jekyll-theme-slate (~> 0.2.0)
-  tzinfo (~> 1.2)
-  tzinfo-data
-  wdm (~> 0.1.1)
+  jekyll-theme-merlot (~> 0.2.0)
 
 BUNDLED WITH
    2.2.26

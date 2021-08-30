@@ -4,7 +4,7 @@ description: >-
   Blog personnel où je parle de café.
 url: "http://bzhista.frad.in"
 
-theme: jekyll-theme-slate
+theme: jekyll-theme-merlot
 
 github:
   is_project_page: false
