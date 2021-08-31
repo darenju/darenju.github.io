@@ -61,3 +61,19 @@ em.post-info {
   display: block;
   text-align: right;
 }
+
+@media handheld, only screen and (max-device-width:640px) {
+  nav#nav {
+    margin-bottom: 27px;
+    font-size: 0.8em;
+  }
+  nav#nav a {
+    text-decoration: underline;
+  }
+  nav#nav a:hover {
+    text-decoration: none;
+  }
+  nav#nav a:not(:last-child):after {
+    right: -22px;
+  }
+}
