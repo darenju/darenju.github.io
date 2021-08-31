@@ -4,4 +4,6 @@ gem "github-pages", "~> 219", group: :jekyll_plugins
 
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
+  gem "liquid_reading_time"
+  gem "liquid_pluralize"
 end
