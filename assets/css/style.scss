@@ -62,6 +62,27 @@ em.post-info {
   text-align: right;
 }
 
+[class^="header-level-"] {
+  display: flex;
+  position: relative;
+
+  a {
+    display: none;
+    position: absolute;
+    left: -21px;
+
+    &:after {
+      content: ' ';
+    }
+  }
+
+  &:hover {
+    a {
+      display: block;
+    }
+  }
+}
+
 @media handheld, only screen and (max-device-width:640px) {
   nav#nav {
     margin-bottom: 27px;
