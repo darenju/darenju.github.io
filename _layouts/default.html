@@ -29,8 +29,8 @@
       <header>
         <span class="ribbon-outer">
           <span class="ribbon-inner">
-            <h1>{{ site.title | default: site.github.repository_name }}</h1>
-            <h2>{{ site.description | default: site.github.project_tagline }}</h2>
+            <span class="site-title">{{ site.title | default: site.github.repository_name }}</span>
+            <p class="site-description">{{ site.description | default: site.github.project_tagline }}</p>
           </span>
           <span class="left-tail"></span>
           <span class="right-tail"></span>
@@ -46,10 +46,14 @@
       {% else %}
         <div id="no-downloads">
           <span class="inner">
+            <nav id="nav">
+              {% for page in site.data.nav.pages %}
+                <a href="{{ page.url }}">{{page.title}}</a>
+              {% endfor %}
+            </nav>
           </span>
         </div>
       {% endif %}
-
 
       <span class="banner-fix"></span>
 
@@ -61,12 +65,7 @@
       <footer>
         <span class="ribbon-outer">
           <span class="ribbon-inner">
-            {% if site.github.is_project_page %}
-              <p>this project by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a> can be found on <a href="{{ site.github.repository_url }}">GitHub</a></p>
-            {% endif %}
-            {% if site.github.is_user_page %}
-              <p>Projects by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a> can be found on <a href="{{ site.github.repository_url }}">GitHub</a></p>
-            {% endif %}
+              <p>Bon shots !</p>
           </span>
           <span class="left-tail"></span>
           <span class="right-tail"></span>

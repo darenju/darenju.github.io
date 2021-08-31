@@ -1,0 +1,57 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+span.site-title {
+  background-color: #7c334f;
+  font-size: 2.5em;
+  font-weight: 800;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #ece4d8;
+  text-align: center;
+  line-height: 1;
+  display: block;
+  padding: 14px 20px 0;
+}
+
+p.site-description {
+  background-color: #7c334f;
+  font: bold italic .85em/1.5 Georgia, Times, "Times New Roman", serif;
+  color: #e69b95;
+  padding-bottom: 14px;
+  text-align: center;
+  margin: -3px 0 0;
+}
+
+div#no-downloads span.inner {
+  align-items: flex-end;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav#nav {
+  display: flex;
+  margin-bottom: 35px;
+
+  a {
+    color: #fff;
+    text-shadow: 0 1px 0 #000;
+    position: relative;
+
+    &:not(:first-child) {
+      margin-left: 10px;
+    }
+    &:not(:last-child) {
+      margin-right: 10px;
+
+      &:after {
+        position: absolute;
+        right: -17px;
+        content: '・';
+        pointer-events: none;
+      }
+    }
+  }
+}
