@@ -1,6 +1,7 @@
 ---
 title: Évolution de ma mousse de lait
 layout: post
+comments: true
 ---
 
 Aujourd’hui, j’ai continué à m’entraîner à faire de la mousse de lait…
