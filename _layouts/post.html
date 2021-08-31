@@ -6,7 +6,7 @@
   {% unless words contains '-' %}
   {% endunless %}
   {% assign time = words | plus: 150 | divided_by: 150 %}
-  {{ time | pluralize: "minute" }} de lecture
+  {{ time }}{% if time > 1 }}s{% endif %} de lecture
   –
   Publié le {{ page.date | date: "%d/%m/%Y" }}
 </em>
