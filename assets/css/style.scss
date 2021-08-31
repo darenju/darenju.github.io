@@ -3,7 +3,7 @@
 
 @import "{{ site.theme }}";
 
-span.site-title {
+a.site-title {
   background-color: #7c334f;
   font-size: 2.5em;
   font-weight: 800;
@@ -12,6 +12,7 @@ span.site-title {
   color: #ece4d8;
   text-align: center;
   line-height: 1;
+  text-decoration: none;
   display: block;
   padding: 14px 20px 0;
 }

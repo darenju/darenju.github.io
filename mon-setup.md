@@ -2,8 +2,6 @@
 title: Mon setup
 ---
 
-# Mon setup
-
 Sur cette page, je vais décrire quelles machines et quels outils j’utilise pour réaliser mes extractions.
 
 ## Moulin

@@ -1,8 +1,6 @@
 ---
-title: Accueil
+title: Bienvenue sur le blog BZHista
 ---
-
-# Bienvenue sur le blog BZHista
 
 Ici, je raconterai mon aventure dans le monde merveilleux de l’espresso… ☕️
 
@@ -12,4 +10,4 @@ Je fais ce blog pour le plaisir et n’ai absolument pas la prétention d’êtr
 
 Aussi, il existe peu de vidéos sur la machine que je possède (voir la page [Mon Setup](/mon-setup)). Par la suite, j’essaierai donc de faire quelques vidéos d’extractions, afin de donner quelques astuces. Peut-être faire des vidéos "Morning Coffee" à la [Arty Home](https://www.youtube.com/c/ArtyHome) ?
 
-Bonne visite et bons shots ! 😄 
+Bonne visite et bons shots ! 😄
