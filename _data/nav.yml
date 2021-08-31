@@ -3,3 +3,5 @@ pages:
     url: mon-setup.html
   - title: Articles
     url: articles.html
+  - title: Tests de café
+    url: tests-de-cafe.html
