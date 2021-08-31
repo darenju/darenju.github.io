@@ -1,7 +1,7 @@
 {% capture time %}{{ content | reading_time }}{% endcapture %}
 {% include header.html %}
 <em class="post-info">
-  {{ time | pluralize: "minute" }} de lecture
+  {{ time | pluralize: "minute" }} de lecture
   –
   Publié le {{ page.date | date: "%d/%m/%Y" }}
 </em>
