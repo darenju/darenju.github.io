@@ -97,4 +97,13 @@ em.post-info {
   nav#nav a:not(:last-child):after {
     right: -22px;
   }
+
+  [class^="header-level-"] {
+    position: static;
+
+    a {
+      display: block;
+      position: static;
+    }
+  }
 }
